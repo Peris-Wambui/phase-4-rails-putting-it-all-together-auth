@@ -82,6 +82,7 @@ RSpec.describe "Sessions", type: :request do
       end
     end
 
+    
     context "without a logged in user" do
       it "returns an array of error messages in the body" do
         delete "/logout"
